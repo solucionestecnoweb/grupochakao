@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+        
+        <!-- fleet.vehicle.log.internal.services tree view -->
+        <record id="upta_carreras_view_tree" model="ir.ui.view">
+            <field name="name">fleet.vehicle.log.internal.services.view.tree</field>
+            <field name="model">fleet.vehicle.log.internal.services</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="e_type"/>
+                    <field name="placa"/>
+                    <field name="km"/>
+                    <field name="driver"/>
+                    <field name="m_type"/>
+                    <field name="m_team"/>
+                    <field name="responsable"/>
+                    <field name="planned_date"/>
+                    <field name="duration"/>
+                    <field name="priority"/>
+                    <field name="company_id"/>
+                    <field name="treatment"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- fleet.vehicle.log.internal.services form view -->
+        <record id="upta_carreras_view_form" model="ir.ui.view">
+            <field name="name">fleet.vehicle.log.internal.services.view.form</field>
+            <field name="model">fleet.vehicle.log.internal.services</field>
+            <field name="arch" type="xml">
+                <form>
+                <header>
+                    <button name="status_ep" type="object" string="Pasar a En Progreso" attrs="{'invisible': [('status', '=', 'en_progreso')]}"/>
+                    <button name="status_r" type="object" string="Pasar a Reparado" attrs="{'invisible': [('status', '=', 'reparado')]}"/>
+                    <button name="status_d" type="object" string="Pasar a desechar" attrs="{'invisible': [('status', '=', 'desechar')]}"/>
+                    <field name="status" widget="statusbar" statusbar_visible="nueva_solicitud,en_progreso,reparado,desechar"/>
+                </header>
+                    <sheet>
+                        <h1>
+                            <field name="name" placeholder="Petición de Mantenimiento" required="1"/>
+                        </h1>
+                        <group>
+                            <group>
+                                <field name="created_by"/>                             
+                                <field name="e_type" widget="radio"/>
+                                <field name="placa"/>
+                                <field name="km"/>
+                                <field name="driver"/>
+                                <field name="m_type" widget="radio"/>
+                            </group>
+                            <group>
+                                <field name="m_team"/>
+                                <field name="responsable"/>
+                                <field name="planned_date"/>
+                                <field name="duration" widget="float_time"/>
+                                <field name="priority" widget="priority"/>
+                                <field name="company_id"/>
+                                <field name="treatment"/>
+                            </group>
+                        </group>
+                        <field name="internal_note" placeholder="Nota interna"/>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- fleet.vehicle.log.internal.services search view -->
+        <record id="upta_carreras_view_search" model="ir.ui.view">
+            <field name="name">fleet.vehicle.log.internal.services.view.search</field>
+            <field name="model">fleet.vehicle.log.internal.services</field>
+            <field name="arch" type="xml">
+                <search string="Búsqueda de Mantenimiento">
+                    <!-- Add your fields here -->
+                    <field name="name"/>
+                    <field name="placa"/>
+                    <field name="driver"/>
+                    <field name="responsable"/>
+                    <field name="priority"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="flota_servicios_vehiculos_action" model="ir.actions.act_window">
+            <field name="name">Mantenimiento</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fleet.vehicle.log.internal.services</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem   name="Mantenimiento" 
+                    id="supercauchos.servicios_internos_vehiculos"
+                    sequence="5"
+                    parent="fleet.fleet_vehicles"
+                    action="flota_servicios_vehiculos_action"
+                    />
+
+
+    </data>
+</odoo>

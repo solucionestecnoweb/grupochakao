@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	    	<record id="inventory_wizard_picking_salida" model="ir.ui.view">
+	       	    <field name="name">Asistente para Ordenes de Salidas</field>
+	            <field name="model">stock.wizard.picking</field>
+	    	    <field name="arch" type="xml">
+	    	    	 <form string="Ordenes de Salidas">
+	                    <div>
+	                        <group >
+	                            <field name="date_from" string="Fecha Inicio" required="1"/>
+	                            <field name="date_to"  string="Fecha Fin" required="1"/>
+	                        </group>
+	                    </div>
+	                    <footer> 
+	                        <button name="print_ordenes" string="Exportar PDF" type="object" class="oe_highlight" />
+	                        <button special="cancel" string="Cancel" class="oe_highlight" />
+	                    </footer>
+	                </form>
+	    	    </field>
+	    	</record>
+	        <record id="action_stock_picking_salidas" model="ir.actions.act_window">
+	        	<field name="name">Ordenes de Salidas</field>
+	        	<field name="res_model">stock.wizard.picking</field>
+	        	<field name="view_mode">form</field>
+	        	<field name="view_id" ref="inventory_wizard_picking_salida"/>
+	        	<field name="target">new</field>
+	    	</record>
+
+			<menuitem name="Reporte Ordenes de Salidas" parent="stock.menu_warehouse_report" id="supercauchos.stock_wizard_picking" action="action_stock_picking_salidas"/>
+	</data>
+</odoo>
