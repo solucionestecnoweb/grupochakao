@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data noupdate="0">
+        <!-- Add you code here -->
+        <report 
+            id="action_sale_order_extend" 
+            model="sale.order" 
+            string="Ordenes de Ventas" 
+            report_type="qweb-pdf"
+            name="sale_report_supercauchos.sale_order_extend" 
+            file="sale_report_supercauchos.sale_order_extend" 
+            menu="True" 
+            />
+
+        <template id="external_layout_sale_order_extend">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8">
+                            <img t-if="res_company.logo" t-att-src="'data:image/png;base64,%s' % to_text(res_company.logo)" style="max-height: 100px; max-width: 200px;"/><br/>
+                            <b style="font-size:12px;">Nombre y Apellido o Razón Social: <t t-esc="o.partner_id.name"/></b><br/>
+                            <b style="font-size:12px;">C.I. / R.I.F: <t t-esc="o.rif"/></b><br/>
+                            <b style="font-size:12px;">Domicilio Fiscal: <t t-esc="o.partner_id.street"/> <t t-esc="o.partner_id.city"/> <t t-esc="o.partner_id.state_id.name"/></b><br/>
+                        </div>
+                        <div class="col-4 text-center">
+                            <span style="font-size:12px;">Tasa </span><br/>
+                            <b style="font-size:16px;">Pedido ME <t t-esc="o.name"/></b><br/>
+                            <span style="font-size:12px;">Emisión: <t t-esc="o.date_order"/></span><br/>
+                            <span style="font-size:12px;">Vencimiento: </span><br/>
+                            <span style="font-size:12px;">Vendedor: <t t-esc="o.user_id.name"/></span><br/>
+                            <span style="font-size:12px;">Orden Compra: </span><br/>
+                            <span style="font-size:12px;">Cond. de Pago: </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article o_report_layout_standard">
+                <t t-raw="0"/>
+            </div>
+
+            <div class="footer">
+                <div class="container" style="border-top: 1px solid black;">
+                    <div class="row">
+                        <div class="col-6">
+                            <b style="font-size:12px;">Notas</b> <br/>
+                            <span style="font-size:12px;" t-if="o.note"><t t-esc="o.note"/><br/></span> <span style="font-size:12px;" t-else=""><br/><br/><br/><br/></span>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-9 text-right">
+                                    <span style="font-size:12px;">Total Interno</span> <br/>
+                                    <span style="font-size:12px;">Descuento, Bonificaciones, Ajustes, Anulaciones</span> <br/>
+                                    <span style="font-size:12px;">Total a Pagar</span>
+                                </div>
+                                <div class="col-3 text-right">
+                                    <b style="font-size:12px;"><t t-esc="subtotal"/></b><br/>
+                                    <b style="font-size:12px;"><t t-esc="bonus"/></b><br/>
+                                    <b style="font-size:12px;"><t t-esc="net_amount"/></b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="sale_order_extend">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="sale_report_supercauchos.external_layout_sale_order_extend">
+                        <div class="page">
+                            
+                            <br/><br/>
+                            <table>
+                                <!-- Cantidad de columnas -->
+                                <colgroup>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 30%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                    <col span="1" style="width: 10%;"/>
+                                </colgroup>
+                                <!-- Fin cantidad de columnas -->
+
+                                <!-- Cabeceras -->
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Codigo</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Descripción</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Deposito</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Cantidad</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Filler</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Precio Unit.</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">FillerT</th>
+                                        <th class="text-center" style="border-right: 3px solid white; display: table-cell; vertical-align: middle; background-color: #cacaca; font-size:14px;">Total</th>
+                                    </tr>
+                                </thead>
+                                <!-- Fin cabeceras -->
+                                
+                                <!-- Variables totales -->
+                                <t t-set="subtotal" t-value="0"/>
+                                <t t-set="net_amount" t-value="0"/>
+                                <t t-set="bonus" t-value="0"/>
+                                <t t-set="total_qty" t-value="0"/>
+                                <t t-set="fillert" t-value="0"/>
+                                <!-- Fin variables totales -->
+                                
+                                <tbody>
+                                    <!-- Lineas -->
+                                    <t t-foreach="o.order_line" t-as="item">
+                                        <tr>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.product_id.default_code"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.name"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.product_id.warehouse_id.name"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.product_uom_qty"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="round(item.product_id.filler, 3)"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.price_unit"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="round(item.product_id.filler * item.product_uom_qty, 3)"/></span>
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="font-size:12px;"><t t-esc="item.price_unit * item.product_uom_qty"/></span>
+                                            </td>
+                                        </tr>
+                                        <t t-set="total_qty" t-value="total_qty + item.product_uom_qty"/>
+                                        <t t-set="fillert" t-value="fillert + (item.product_uom_qty * item.product_id.filler)"/>
+                                        <t t-set="amount" t-value="item.price_unit * item.product_uom_qty"/>
+                                        <t t-set="bonus" t-value="bonus + ((item.discount * amount) / 100)"/>
+                                        <t t-set="subtotal" t-value="subtotal + amount"/>
+                                        <t t-set="net_amount" t-value="subtotal - bonus"/>
+                                    </t>
+                                    <!-- Fin lineas -->
+
+                                    <!-- Totales -->
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td class="text-center">
+                                            <b style="font-size:12px;">Subtotal</b>
+                                        </td>
+                                        <td class="text-center">
+                                            <span style="font-size:12px;"><t t-esc="total_qty"/></span>
+                                        </td>
+                                        <td colspan="2"></td>
+                                        <td class="text-center">
+                                            <span style="font-size:12px;"><t t-esc="round(fillert, 3)"/></span>
+                                        </td>
+                                    </tr>
+                                    <!-- Fin totales -->
+                                </tbody>     
+                            </table>
+                            
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
