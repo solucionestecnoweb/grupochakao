@@ -1,0 +1,426 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_move_extend_fields_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-18 20:58+0000\n"
+"PO-Revision-Date: 2021-05-18 20:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "0,00"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid "<b style=\"font-size:12px;\">Cash</b>"
+msgstr "<b style=\"font-size:12px;\">Efectivo</b>"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid "<b style=\"font-size:12px;\">Credit</b>"
+msgstr "<b style=\"font-size:12px;\">Crédito</b>"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "<b style=\"font-size:12px;\">Hemos recibido el pago/abono a:</b><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "<b style=\"font-size:12px;\">Monto Facturado: </b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid ""
+"<b style=\"font-size:12px;\">Nombre y Apellido o Razón Social</b><br/>\n"
+"                                    <b style=\"font-size:12px;\">C.I. / R.I.F</b><br/>\n"
+"                                    <b style=\"font-size:12px;\">Domicilio Fiscal</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "<b style=\"font-size:12px;\">Notas </b><span style=\"font-size:12px;\"/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid ""
+"<b style=\"font-size:12px;\">Saldo Pendiente: </b><span style=\"font-"
+"size:12px;\">0,00</span><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "<b style=\"font-size:12px;\">Total Egreso</b><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "<b>Descuentos</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "<b>Monto Neto</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "<b>Subtotal</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "<b>Total IVA Adicional</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "<b>Total IVA Excento</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "<b>Total IVA General</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "<b>Total IVA Reducido</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "<b>Total a Pagar</b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid ""
+"<br/>\n"
+"                                            <b style=\"font-size:12px;\">Monto Anticipo: </b><span style=\"font-size:12px;\">0,00</span><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid ""
+"<br/>\n"
+"                                <span style=\"font-size:12px;\">Cliente </span>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid ""
+"<br/>\n"
+"                                <span style=\"font-size:12px;\">Por concepto de: Segundo Pago Sistema Odoo</span><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid ""
+"<br/>\n"
+"                            <b style=\"font-size:12px;\">Cond. Pago: </b>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid ""
+"<br/><br/><br/>\n"
+"                                <span style=\"font-size:12px;\">R.I.F </span>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "<span style=\"font-size:12px;\">Firma conforme</span><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "<span style=\"font-size:12px;\">Recibido por: </span><br/>"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "A traves de"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "Alíc."
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "Cant."
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields.selection,name:account_move_extend_fields_reports.selection__account_move__payment_condition__cash
+msgid "Cash"
+msgstr "Efectivo"
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model,name:account_move_extend_fields_reports.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields.selection,name:account_move_extend_fields_reports.selection__account_move__payment_condition__credit
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Cuenta"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "Código"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Descripción"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Dirección"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Débitos"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid "Emisión:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Estado"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_agroruedas_bs
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_multirepuestos_bs
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_supercauchos_bs
+msgid "Factura Forma Libre/ME Bs."
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_agroruedas_usd
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_multirepuestos_usd
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_move_invoice_extend_supercauchos_usd
+msgid "Factura Forma Libre/ME USD"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Factura N°:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid "Factura:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Fecha:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_extend_form
+msgid "Free Form/ME Bs."
+msgstr "Forma Libre/ME Bs."
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_extend_form
+msgid "Free Form/ME USD"
+msgstr "Forma Libre/ME USD"
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields.selection,name:account_move_extend_fields_reports.selection__res_company__paperformat__half
+msgid "Half Letter"
+msgstr "Media Carta"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Hemos entregado a:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields,field_description:account_move_extend_fields_reports.field_account_move__paperformat
+#: model:ir.model.fields,field_description:account_move_extend_fields_reports.field_res_company__paperformat
+msgid "Invoice Format"
+msgstr "Formato de Factura"
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model,name:account_move_extend_fields_reports.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "La cantidad de:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields.selection,name:account_move_extend_fields_reports.selection__res_company__paperformat__letter
+msgid "Letter"
+msgstr "Carta"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Monto Pago"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Monto Pago $"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Monto Pago Bs"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields,field_description:account_move_extend_fields_reports.field_account_move__payment_condition
+msgid "Payment Condition"
+msgstr "Condición de Pago"
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model,name:account_move_extend_fields_reports.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "Precio Unit."
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Recibo N°"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Recibo de Caja N°"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.actions.report,name:account_move_extend_fields_reports.action_account_payment_extend
+msgid "Recibo de Pago Extendido"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model:ir.model.fields,field_description:account_move_extend_fields_reports.field_account_move__seller_id
+#: model:ir.model.fields,field_description:account_move_extend_fields_reports.field_account_payment__seller_id
+msgid "Seller"
+msgstr "Vendedor"
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_payment_extend
+msgid "Tasa:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_usd
+msgid "Total $"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_agroruedas_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_multirepuestos_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.account_move_invoice_extend_supercauchos_bs
+msgid "Total Bs"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+msgid "Vencimiento:"
+msgstr ""
+
+#. module: account_move_extend_fields_reports
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_bs
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_move_extend_usd
+#: model_terms:ir.ui.view,arch_db:account_move_extend_fields_reports.external_layout_account_payment_extend
+msgid "Vendedor:"
+msgstr ""
