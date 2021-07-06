@@ -20,7 +20,7 @@
                 <field name="super_promo"/>
                 <field name="apart_to_seller"/>
                 <field name="apart_qty_available"/>
-                <field name="date_order"/>
+                <field name="date_planned"/>
             </tree>
         </field>
     </record>

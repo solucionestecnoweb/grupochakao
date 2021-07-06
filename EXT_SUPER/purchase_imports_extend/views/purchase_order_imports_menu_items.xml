@@ -52,6 +52,12 @@
                     id="purchase_order_importation_menu"
                     sequence="5"
                     parent="purchase_order_menu_root_extend"
+                    />
+
+        <menuitem   name="Importation Cycle Records" 
+                    id="importation_records_menu"
+                    sequence="1"
+                    parent="purchase_order_importation_menu"
                     action="purchase_order_importation_action"
                     />
         

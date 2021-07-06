@@ -20,8 +20,8 @@
                 <field name="accumulated"/>
                 <field name="eta"/>
                 <field name="transit" sum="Total Transit"/>
-                <field name="nac"/>
-                <field name="total"/>
+                <field name="nac" sum="Total NAC"/>
+                <field name="total" sum="Total"/>
             </tree>
         </field>
     </record>

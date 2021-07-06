@@ -7,7 +7,7 @@
     "maintainer": "OasisConsultora",
     "website": "oasisconsultora.com",
     "license": "AGPL-3",
-    "depends": ['base', 'purchase'],
+    "depends": ['base', 'purchase', 'supercauchos_stock', 'sale'],
     "data": [
         "security/ir.model.access.csv",
         "views/purchase_order_imports.xml",
@@ -17,6 +17,9 @@
         "views/purchase_order_imports_merchandise.xml",
         "views/purchase_order_imports_importations.xml",
         "views/purchase_order_imports_menu_items.xml",
+        "views/sale_order_imports.xml",
+        "views/wizard_importations.xml",
+        "report/importation_cycle.xml",
     ],
     'installable': True,
 }

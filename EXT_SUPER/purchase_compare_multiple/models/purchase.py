@@ -33,15 +33,6 @@ class PurchaseCompareMultiple(models.Model):
         today_date = datetime.now() - timedelta(hours=4)
         return today_date
     
-    def _get_rate(self):
-        xfind = self.env['res.currency.rate'].search([
-			('name', '=', date.today())
-		], limit=1)
-        if xfind:
-            return xfind.sell_rate
-        else:
-            return 1
-
     def compare_price(self):
         if len(self.purchase_order_ids) != 3:
             raise ValidationError(_("There must be three records in the purchase orders to be able to compare"))
@@ -55,7 +46,8 @@ class PurchaseCompareMultiple(models.Model):
                         'provider_id': item.partner_id.id,
                         'qty': line.product_qty,
                         'price': line.price_unit,
-                        'currency_id': line.currency_id.id
+                        'currency_id': line.currency_id.id,
+                        'rate': item.rate
                     }
                     t.create(values)
             self._compare_lines()
@@ -63,20 +55,28 @@ class PurchaseCompareMultiple(models.Model):
     def _compare_lines(self):
         self.env['purchase.compared.prices'].search([('purchase_compare_multiple_id', '=', self.id)]).unlink()
         xfind = self.env['purchase.compared.prices.lines'].search([])
+
         provider_l = 0
         qtyl = 0
         price_l = 0
         currency_l = 0
+        rate_l = 0
+
         provider_m = 0
         qtym = 0
         price_m = 0
         currency_m = 0
+        rate_m = 0
+
         provider_h = 0
         qtyh = 0
         price_h = 0
         currency_h = 0
+        rate_h = 0
+
         product_temporal = ''
         counter = len(xfind)
+
         for item in xfind.sorted(key=lambda a: a.product_id.id): #Recorremos las lineas y asignamos valor a las variables
             #Evaluación de Registro de Lineas
             counter -= 1
@@ -88,14 +88,17 @@ class PurchaseCompareMultiple(models.Model):
                         'qty1': qtyl,
                         'price1': price_l,
                         'currency_id1': currency_l,
+                        'rate1': rate_l,
                         'provider_id2': provider_m,
                         'qty2': qtym,
                         'price2': price_m,
                         'currency_id2': currency_m,
+                        'rate2': rate_m,
                         'provider_id3': provider_h,
                         'qty3': qtyh,
                         'price3': price_h,
                         'currency_id3': currency_h,
+                        'rate3': rate_h,
                         'purchase_compare_multiple_id': self.id,
                     }
                     self.env['purchase.compared.prices'].create(values)     
@@ -116,13 +119,16 @@ class PurchaseCompareMultiple(models.Model):
                 provider_l = item.provider_id.id
                 qtyl = item.qty
                 currency_l = item.currency_id.id
+                rate_l = item.rate
 
             if item.price > price_h or price_h == 0:
                 price_h = item.price
                 provider_h = item.provider_id.id
                 qtyh = item.qty
                 currency_h = item.currency_id.id
+                rate_h = item.rate
 
+            #Calculo de precio promedio
             if price_m == 0:
                 price_count = 0
                 find_lines = self.env['purchase.compared.prices.lines'].search([('product_id', '=', item.product_id.id)])
@@ -137,22 +143,26 @@ class PurchaseCompareMultiple(models.Model):
                             provider_m = item.provider_id.id
                             qtym = item.qty
                             currency_m = item.currency_id.id
+                            rate_m = item.rate
             
             if counter == 0: #Registro de la última comparativa
                 values ={
-                    'product_id': item.product_id.id,
+                    'product_id': product_temporal,
                     'provider_id1': provider_l,
                     'qty1': qtyl,
                     'price1': price_l,
                     'currency_id1': currency_l,
+                    'rate1': rate_l,
                     'provider_id2': provider_m,
                     'qty2': qtym,
                     'price2': price_m,
                     'currency_id2': currency_m,
+                    'rate2': rate_m,
                     'provider_id3': provider_h,
                     'qty3': qtyh,
                     'price3': price_h,
                     'currency_id3': currency_h,
+                    'rate3': rate_h,
                     'purchase_compare_multiple_id': self.id,
                 }
                 self.env['purchase.compared.prices'].create(values)     
@@ -165,16 +175,18 @@ class PurchaseComparedPrices(models.Model):
     qty1 = fields.Integer(string='Quantity')
     price1 = fields.Float(string='Lower price')
     currency_id1 = fields.Many2one(comodel_name='res.currency', string='Currency')
+    rate1 = fields.Float(string='Rate')
     provider_id2 = fields.Many2one(comodel_name='res.partner', string='Provider')
     qty2 = fields.Integer(string='Quantity')
     price2 = fields.Float(string='Half price')
     currency_id2 = fields.Many2one(comodel_name='res.currency', string='Currency')
+    rate2 = fields.Float(string='Rate')
     provider_id3 = fields.Many2one(comodel_name='res.partner', string='Provider')
     qty3 = fields.Integer(string='Quantity')
     price3 = fields.Float(string='Higher price')
     currency_id3 = fields.Many2one(comodel_name='res.currency', string='Currency')
+    rate3 = fields.Float(string='Rate')
     purchase_compare_multiple_id = fields.Many2one(comodel_name='purchase.compare.multiple', string='Purchase Compare')
-    currency_id = fields.Many2one('res.currency', string='Currency', default=lambda self: self.env.user.company_id.currency_id)
 
 class PurchaseComparedPricesLines(models.Model):
     _name = 'purchase.compared.prices.lines'
@@ -184,3 +196,5 @@ class PurchaseComparedPricesLines(models.Model):
     qty = fields.Integer(string='Quantity')
     price = fields.Float(string='Price')
     currency_id = fields.Many2one('res.currency', string='Currency')
+    rate = fields.Float(string='Rate')
+    

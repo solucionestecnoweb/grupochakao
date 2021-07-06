@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-25 00:07+0000\n"
-"PO-Revision-Date: 2021-06-25 00:07+0000\n"
+"POT-Creation-Date: 2021-07-03 20:29+0000\n"
+"PO-Revision-Date: 2021-07-03 20:29+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,120 @@ msgid "70%"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.external_layout_importation_cycle
+msgid ""
+"<b style=\"font-size:12px;\">Page <span class=\"page\" style=\"font-"
+"size:12px;\"/> / <span class=\"topage\" style=\"font-size:12px;\"/></b><br/>"
+msgstr ""
+"<b style=\"font-size:12px;\">Página <span class=\"page\" style=\"font-"
+"size:12px;\"/> / <span class=\"topage\" style=\"font-size:12px;\"/></b><br/>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<b style=\"font-size:12px;\">Totals...</b>"
+msgstr "<b style=\"font-size:12px;\">Totales...</b>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.external_layout_importation_cycle
+msgid ""
+"<br/>\n"
+"                            <b style=\"font-size:20px;\">Importation Cycle</b><br/>"
+msgstr ""
+"<br/>\n"
+"                            <b style=\"font-size:20px;\">Ciclo de Importación</b><br/>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:12px;\">Average Production</span>"
+msgstr "<span style=\"font-size:12px;\">Promedio Producción</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:12px;\">Average Transit</span>"
+msgstr "<span style=\"font-size:12px;\">Promedio Tránsito</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:12px;\">Total Average Days</span>"
+msgstr "<span style=\"font-size:12px;\">Total Días Promedio</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Accumulated</span>"
+msgstr "<span style=\"font-size:14px;\">Acumulado</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">BL Date</span>"
+msgstr "<span style=\"font-size:14px;\">Fecha BL</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Brand</span>"
+msgstr "<span style=\"font-size:14px;\">Marca</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Container</span>"
+msgstr "<span style=\"font-size:14px;\">Contenedor</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">ETA</span>"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Invoice</span>"
+msgstr "<span style=\"font-size:14px;\">Factura</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">NAC</span>"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Prof Date</span>"
+msgstr "<span style=\"font-size:14px;\">Fecha Prof</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Prof</span>"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Supplier</span>"
+msgstr "<span style=\"font-size:14px;\">Proveedor</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Total</span>"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Transc</span>"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Transit</span>"
+msgstr "<span style=\"font-size:14px;\">Tránsito</span>"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.importation_cycle
+msgid "<span style=\"font-size:14px;\">Type</span>"
+msgstr "<span style=\"font-size:14px;\">Tipo</span>"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__accumulated
+#, python-format
 msgid "Accumulated"
 msgstr "Acumulado"
 
@@ -142,14 +255,37 @@ msgid "Attachment Count"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Average Production"
+msgstr "Promedio Producción"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Average Transit"
+msgstr "Promedio Tránsito"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__bl_date
+#, python-format
 msgid "BL Date"
 msgstr "Fecha BL"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__container_brand
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__importation_brand
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__import_brand
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__group_field__importation_brand
+#, python-format
 msgid "Brand"
 msgstr "Marca"
 
@@ -159,12 +295,27 @@ msgid "CONT"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.wizard_importation_cycle
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__condition
 msgid "Condition"
 msgstr "Condición"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__container
+#, python-format
 msgid "Cont"
 msgstr ""
 
@@ -185,6 +336,7 @@ msgstr "Búsqueda de Cronograma de Llegada de Contenedores"
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__create_uid
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__create_uid
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__create_uid
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__create_uid
 msgid "Created by"
 msgstr ""
 
@@ -194,6 +346,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__create_date
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__create_date
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__create_date
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__create_date
 msgid "Created on"
 msgstr ""
 
@@ -204,17 +357,36 @@ msgid "Currency"
 msgstr "Moneda"
 
 #. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__date_from
+msgid "Date From"
+msgstr "Desde"
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__date_now
+msgid "Date Now"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__date_to
+msgid "Date To"
+msgstr "Hasta"
+
+#. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_aduana__display_name
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_aduana_payment__display_name
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__display_name
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__display_name
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__display_name
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__eta
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__eta
+#, python-format
 msgid "ETA"
 msgstr ""
 
@@ -234,8 +406,26 @@ msgid "Estate"
 msgstr "Estado"
 
 #. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.wizard_importation_cycle
+msgid "Export PDF"
+msgstr "Exportar PDF"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.wizard_importation_cycle
+msgid "Export XLS"
+msgstr "Exportar EXCEL"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__f_prof
+#, python-format
 msgid "F/Prof"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__name
+msgid "File Name"
 msgstr ""
 
 #. module: purchase_imports_extend
@@ -271,6 +461,19 @@ msgid "Foreign Provider Information"
 msgstr "Información del Proveedor Extranjero"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.external_layout_importation_cycle
+#, python-format
+msgid "From:"
+msgstr "Desde:"
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__group_field
+msgid "Group By"
+msgstr "Ordenar Por"
+
+#. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__harbor
 msgid "Harbor"
 msgstr "Puerto"
@@ -281,6 +484,7 @@ msgstr "Puerto"
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__id
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__id
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__id
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__id
 msgid "ID"
 msgstr ""
 
@@ -342,10 +546,38 @@ msgid "Import Payment Schedule Search"
 msgstr "Búsqueda de Cronograma de Pagos de Importaciones"
 
 #. module: purchase_imports_extend
+#: model:ir.actions.act_window,name:purchase_imports_extend.action_wizard_importation_cycle
 #: model:ir.actions.act_window,name:purchase_imports_extend.purchase_order_importation_action
 #: model:ir.ui.menu,name:purchase_imports_extend.purchase_order_importation_menu
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.wizard_importation_cycle
 msgid "Importation Cycle"
 msgstr "Ciclo de Importación"
+
+#. module: purchase_imports_extend
+#: model:ir.ui.menu,name:purchase_imports_extend.importation_records_menu
+msgid "Importation Cycle Records"
+msgstr "Registros de Ciclo de Importación"
+
+#. module: purchase_imports_extend
+#: model:ir.ui.menu,name:purchase_imports_extend.wizard_importation_cycle_menu
+msgid "Importation Cycle Report"
+msgstr "Reporte de Ciclo de Importación"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Importation cycle"
+msgstr "Ciclo de Importación"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Importation cycle "
+msgstr "Ciclo de Importación "
 
 #. module: purchase_imports_extend
 #: model:ir.ui.menu,name:purchase_imports_extend.purchase_order_menu_root_extend
@@ -354,7 +586,12 @@ msgid "Imports"
 msgstr "Importaciones"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__invoice_id
+#, python-format
 msgid "Invoice"
 msgstr "Factura"
 
@@ -393,6 +630,7 @@ msgstr "Fecha de Envío"
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers____last_update
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations____last_update
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment____last_update
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -402,6 +640,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__write_uid
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__write_uid
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__write_uid
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__write_uid
 msgid "Last Updated by"
 msgstr ""
 
@@ -411,6 +650,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__write_date
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__write_date
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__write_date
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__write_date
 msgid "Last Updated on"
 msgstr ""
 
@@ -468,7 +708,12 @@ msgid "N BL / Container"
 msgstr "N BL / Cont"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__nac
+#, python-format
 msgid "NAC"
 msgstr ""
 
@@ -591,6 +836,11 @@ msgid "Payment Imports Data"
 msgstr "Información de Pagos de Importaciones"
 
 #. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__report
+msgid "Prepared file"
+msgstr "Archivo preparado"
+
+#. module: purchase_imports_extend
 #: model_terms:ir.ui.view,arch_db:purchase_imports_extend.imports_merchandise_transit_view_tree
 msgid "Product"
 msgstr "Producto"
@@ -601,7 +851,13 @@ msgid "Production"
 msgstr "Producción"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__prof
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__group_field__prof
+#, python-format
 msgid "Prof"
 msgstr ""
 
@@ -638,7 +894,7 @@ msgstr "Liberado"
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__activity_user_id
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Usuario Responsable"
 
 #. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_aduana__message_has_sms_error
@@ -648,6 +904,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__message_has_sms_error
 msgid "SMS Delivery error"
 msgstr ""
+
+#. module: purchase_imports_extend
+#: model:ir.model,name:purchase_imports_extend.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: purchase_imports_extend
+#: model:ir.model,name:purchase_imports_extend.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea pedido de venta"
 
 #. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_line__apart_qty_available
@@ -663,6 +929,11 @@ msgstr "Cantidad Apartada por Vendedor"
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__shipping_company
 msgid "Shipping Company"
 msgstr "Naviera"
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_wizard_importation_cycle__state
+msgid "State"
+msgstr "Estado"
 
 #. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__status
@@ -693,8 +964,14 @@ msgid "Super Promo Promotion"
 msgstr "Promoción Super Promo"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__name
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_payment__name
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__group_field__supplier
+#, python-format
 msgid "Supplier"
 msgstr "Proveedor"
 
@@ -714,7 +991,21 @@ msgid "To be released"
 msgstr "Por Liberar"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.external_layout_importation_cycle
+#, python-format
+msgid "To:"
+msgstr "Para:"
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__total
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_importations_view_tree
+#, python-format
 msgid "Total"
 msgstr ""
 
@@ -725,6 +1016,13 @@ msgid "Total Amount"
 msgstr "Monto Total"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Total Average Days"
+msgstr "Total Días Promedio"
+
+#. module: purchase_imports_extend
 #: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_importations_view_tree
 msgid "Total Container"
 msgstr "Total Contenedores"
@@ -733,6 +1031,11 @@ msgstr "Total Contenedores"
 #: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_containers_view_tree
 msgid "Total Containers"
 msgstr "Total de Contenedores"
+
+#. module: purchase_imports_extend
+#: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_importations_view_tree
+msgid "Total NAC"
+msgstr ""
 
 #. module: purchase_imports_extend
 #: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_payment_view_form
@@ -751,20 +1054,43 @@ msgid "Total Transit"
 msgstr "Total de Tránsito"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#, python-format
+msgid "Totals..."
+msgstr "Totales..."
+
+#. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__transc
+#, python-format
 msgid "Transc"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__transit
 #: model:ir.model.fields.selection,name:purchase_imports_extend.selection__purchase_order_imports_containers__estate__transit
 #: model:ir.model.fields.selection,name:purchase_imports_extend.selection__purchase_order_imports_payment__status__transit
+#, python-format
 msgid "Transit"
 msgstr "Tránsito"
 
 #. module: purchase_imports_extend
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/extra-addons/oasis/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
+#: code:addons/purchase_imports_extend/wizard/wizard_importations.py:0
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__container_type
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_importations__importation_type
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__group_field__importation_type
+#, python-format
 msgid "Type"
 msgstr "Tipo"
 
@@ -796,6 +1122,12 @@ msgid "Unread Messages Counter"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_sale_order__is_transit_merch
+#: model:ir.model.fields,field_description:purchase_imports_extend.field_sale_order_line__is_transit_merch
+msgid "Use Merchandise in Transit?"
+msgstr "¿Usar Mercancía en Trásito?"
+
+#. module: purchase_imports_extend
 #: model:ir.model.fields,field_description:purchase_imports_extend.field_purchase_order_imports_containers__vessel
 msgid "Vessel"
 msgstr "Buque"
@@ -824,9 +1156,24 @@ msgid "Website communication history"
 msgstr ""
 
 #. module: purchase_imports_extend
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__state__choose
+msgid "choose"
+msgstr "elegir"
+
+#. module: purchase_imports_extend
 #: model_terms:ir.ui.view,arch_db:purchase_imports_extend.purchase_order_imports_payment_view_form
 msgid "confirm"
-msgstr ""
+msgstr "confirmar"
+
+#. module: purchase_imports_extend
+#: model:ir.model.fields.selection,name:purchase_imports_extend.selection__wizard_importation_cycle__state__get
+msgid "get"
+msgstr "obtener"
+
+#. module: purchase_imports_extend
+#: model:ir.actions.report,name:purchase_imports_extend.action_importation_cycle
+msgid "importation_cycle"
+msgstr "ciclo_importacion"
 
 #. module: purchase_imports_extend
 #: model:ir.model,name:purchase_imports_extend.model_purchase_order_imports_aduana
@@ -851,4 +1198,9 @@ msgstr ""
 #. module: purchase_imports_extend
 #: model:ir.model,name:purchase_imports_extend.model_purchase_order_imports_payment
 msgid "purchase.order.imports.payment"
+msgstr ""
+
+#. module: purchase_imports_extend
+#: model:ir.model,name:purchase_imports_extend.model_wizard_importation_cycle
+msgid "wizard.importation.cycle"
 msgstr ""
